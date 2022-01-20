@@ -141,11 +141,21 @@ set backspace=indent,eol,start
 let g:auto_save = 1
 let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI", "CursorHoldI", "CompleteDone"]
 
-" ctrl-j/k/l/h  Split window move (Normal mode)
+" ctrl-j/k/l/h  Split window focus(Normal mode)
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
 nnoremap <C-l> <C-W>l
 nnoremap <C-h> <C-W>h
+" split window move (Normal mode)
+nnoremap w=  :resize +3<CR>
+nnoremap w-  :resize -3<CR>
+nnoremap w,  :vertical resize -3<CR>
+nnoremap w.  :vertical resize +3<CR>
+nnoremap <C-w>=  <C-W>=
+
+
+" Save with ctrl-s
+imap <C-s> <Esc>:w!<CR>i
 
 "******************* Python Configuration *****************
 " grammar highlight
