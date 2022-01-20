@@ -17,7 +17,7 @@ brew install neovim
 ## install dependencies
 ```
 # Python
-pip3 install neovim autopep8
+pip3 install neovim autopep8 jedi==0.17.2
 
 # vim-plug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
