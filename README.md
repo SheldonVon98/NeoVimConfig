@@ -23,6 +23,9 @@ pip3 install neovim autopep8 jedi==0.17.2
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+# Download required font and double click to install.
+wget https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Agave/complete/agave%20regular%20Nerd%20Font%20Complete.ttf
+
 ```
 # Configure nvim
 Download configuration file from this repository
